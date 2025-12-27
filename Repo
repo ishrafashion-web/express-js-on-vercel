@@ -1,0 +1,11 @@
+📁 express-js-on-vercel/
+├── 📁 api/
+│   ├── promote.js        # Token promotion endpoint
+│   ├── verify-payment.js # Verify SOL payment
+│   └── pricing.js        # Get pricing tiers
+├── 📁 public/
+│   ├── index.html        # Landing page
+│   ├── styles.css        # Styling
+│   └── app.js            # Frontend JavaScript
+├── package.json
+└── vercel.json
