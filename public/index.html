@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TazPump - Amplify Your Solana Memecoin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🚀 TazPump</div>
+      <nav>
+        <a href="#pricing">Pricing</a>
+        <a href="https://t.me/Tazcoinmarket" target="_blank">📱 Telegram</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-badge">🔥 #1 Solana Token Promotion</div>
+      <h1>Let AI Amplify Your Solana Memecoin</h1>
+      <p>Reach thousands of investors across Telegram, Twitter & LinkedIn</p>
+      <div class="token-input-section">
+        <h3>🪙 Token Address</h3>
+        <input type="text" id="tokenAddress" placeholder="Enter your Solana token address" class="token-input">
+        <div id="tokenInfo" class="token-info"></div>
+      </div>
+    </section>
+    <section id="pricing" class="pricing">
+      <h2>Choose Your Campaign</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>⚡ Basic</h3>
+          <div class="price">0.5 SOL</div>
+          <div class="duration">/ 1 hour</div>
+          <ul>
+            <li>✅ Telegram post</li>
+            <li>✅ Twitter post</li>
+            <li>✅ Basic analytics</li>
+          </ul>
+          <button onclick="selectPlan('basic', 0.5)">Select Basic</button>
+        </div>
+        <div class="pricing-card featured">
+          <div class="badge">🔥 POPULAR</div>
+          <h3>🚀 Advanced</h3>
+          <div class="price">1 SOL</div>
+          <div class="duration">/ 3 hours</div>
+          <ul>
+            <li>✅ All Basic features</li>
+            <li>✅ Homepage feature</li>
+            <li>✅ Priority trending</li>
+            <li>✅ LinkedIn post</li>
+          </ul>
+          <button onclick="selectPlan('advanced', 1)">Select Advanced</button>
+        </div>
+        <div class="pricing-card">
+          <h3>💎 Premium</h3>
+          <div class="price">2 SOL</div>
+          <div class="duration">/ 24 hours</div>
+          <ul>
+            <li>✅ All Advanced features</li>
+            <li>✅ Multiple posts</li>
+            <li>✅ Full analytics</li>
+            <li>✅ Priority support</li>
+          </ul>
+          <button onclick="selectPlan('premium', 2)">Select Premium</button>
+        </div>
+      </div>
+    </section>
+    <div id="paymentModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>🚀 Complete Payment</h2>
+        <p>Plan: <strong id="selectedPlanName"></strong></p>
+        <p>Amount: <strong><span id="paymentAmount"></span> SOL</strong></p>
+        <p style="margin-top:20px;color:#888;">Send to:</p>
+        <div class="wallet-address" id="walletAddress"></div>
+        <button id="connectWallet" onclick="connectWallet()">👻 Connect Phantom</button>
+        <button id="payButton" onclick="sendPayment()" style="display:none;">💰 Pay Now</button>
+      </div>
+    </div>
+    <footer>
+      <p>© 2025 TazPump | <a href="https://t.me/Tazcoinmarket">@Tazcoinmarket</a></p>
+      <p>⚠️ DYOR - Not financial advice</p>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
