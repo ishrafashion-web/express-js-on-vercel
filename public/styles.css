@@ -1,0 +1,11 @@
+:root{--bg:#0f172a;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;background:linear-gradient(180deg,var(--bg),#041124);color:#e6eef7}
+main{max-width:880px;margin:48px auto;padding:24px;background:rgba(255,255,255,0.02);border-radius:12px}
+h1{margin:0 0 16px}
+section{margin-bottom:20px}
+label{display:block;margin:8px 0}
+input,select,button{padding:8px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button{cursor:pointer;background:var(--accent);border:none;color:#042;font-weight:600}
+#tiers{display:flex;gap:12px}
+.tier{background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;flex:1}
+pre#result{background:#011122;padding:12px;border-radius:8px;overflow:auto}

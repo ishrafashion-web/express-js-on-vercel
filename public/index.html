@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Express on Vercel — Token Promotion</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Token Promotion</h1>
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div id="tiers">Loading...</div>
+    </section>
+
+    <section id="promote">
+      <h2>Start Promotion</h2>
+      <form id="promoteForm">
+        <label>
+          Token Address
+          <input type="text" name="tokenAddress" required placeholder="0x... or token-id" />
+        </label>
+        <label>
+          Campaign Type
+          <select name="campaignType">
+            <option value="standard">Standard</option>
+            <option value="accelerated">Accelerated</option>
+          </select>
+        </label>
+        <label>
+          Campaign Style
+          <select name="campaignStyle">
+            <option value="viral">Viral</option>
+            <option value="organic">Organic</option>
+          </select>
+        </label>
+        <label>
+          Your email
+          <input type="email" name="userEmail" placeholder="you@example.com" />
+        </label>
+        <label>
+          Payment ID
+          <input type="text" name="paymentId" placeholder="payment-id" />
+        </label>
+        <button type="submit">Start Promotion</button>
+      </form>
+
+      <pre id="result" aria-live="polite"></pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
